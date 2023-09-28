@@ -30,8 +30,7 @@ if (isset($_POST['submit'])) {
         // Use password_verify to check the entered password against the hashed password
         if (password_verify($Password, $hashedPasswordFromDB)) {
             // Passwords match, user is authenticated
-            $_SESSION['user_email'] = $E_mail; // Store user email in session
-            $_SESSION['user_name'] = $E_name;
+
             header('location: http://localhost/sign-in-and-sign-up/home.php');
             exit;
         } else {
@@ -45,3 +44,5 @@ if (isset($_POST['submit'])) {
             </script>';
     }
 }
+$_SESSION['user_email'] = $E_mail; // Store user email in session
+$_SESSION['user_name'] = $_SESSION['user_name'];

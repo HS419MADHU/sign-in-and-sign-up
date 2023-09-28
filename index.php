@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+$_SESSION['user_email'];
+$_SESSION['user_name'];
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -21,9 +26,10 @@
 </head>
 
 <body>
+    <?= $_SESSION['user_name'] ?>
     <h3>Login form </h3>
     <form action="http://localhost/sign-in-and-sign-up/sign_in.php" method="post">
-    
+
         Email : &nbsp &nbsp <input type="email" class="" name="E_mail" required> <br> <br>
         Password : <input type="password" class="" name="Password" required> <br> <br>
         <input type="submit" name="submit" value="submit">
