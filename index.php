@@ -26,7 +26,6 @@ $_SESSION['user_name'];
 </head>
 
 <body>
-    <?= $_SESSION['user_name'] ?>
     <h3>Login form </h3>
     <form action="http://localhost/sign-in-and-sign-up/sign_in.php" method="post">
 
