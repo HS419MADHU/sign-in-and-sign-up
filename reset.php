@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     // Verify that the new password and confirm password match
     if ($new_Password !== $confirm_Password) {
         echo '<script> 
-        if (confirm("pld password and confirm password not matched. Do you want to go back to the home page?")) {
+        if (confirm("old password and confirm password not matched. Do you want to go back to the home page?")) {
             window.location.href = "http://localhost/sign-in-and-sign-up/index.php";
         }        </script>';
         
